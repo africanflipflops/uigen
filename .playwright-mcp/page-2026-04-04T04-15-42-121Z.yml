@@ -1,0 +1,131 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - heading "React Component Generator" [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - generic [ref=e57]: Create a todo list app with add, complete, and delete functionality
+            - img [ref=e60]
+          - generic [ref=e63]:
+            - img [ref=e66]
+            - generic [ref=e71]:
+              - generic [ref=e74]: Created App.jsx
+              - separator [ref=e75]
+              - generic [ref=e76]:
+                - paragraph [ref=e77]: "Done! I've created a todo list app with:"
+                - list [ref=e83]:
+                  - listitem [ref=e84]:
+                    - strong [ref=e85]: Add
+                    - text: ": Input field with button or Enter key to add todos"
+                  - listitem [ref=e86]:
+                    - strong [ref=e87]: Complete
+                    - text: ": Click the checkbox to mark todos as done (shows checkmark and strikethrough)"
+                  - listitem [ref=e88]:
+                    - strong [ref=e89]: Delete
+                    - text: ": Trash icon to remove todos"
+                  - listitem [ref=e90]:
+                    - strong [ref=e91]: Stats
+                    - text: ": Shows completion progress at the bottom"
+                  - listitem [ref=e92]:
+                    - strong [ref=e93]: Styling
+                    - text: ": Clean gradient background with Tailwind CSS"
+        - generic [ref=e20]:
+          - textbox "Describe the React component you want to create..." [ref=e21]
+          - button [disabled] [ref=e22]:
+            - img [ref=e23]
+    - separator [ref=e26]
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - tablist [ref=e31]:
+          - tab "Preview" [ref=e32]
+          - tab "Code" [active] [selected] [ref=e33]
+        - generic [ref=e34]:
+          - button "Sign In" [ref=e35]
+          - button "Sign Up" [ref=e36]
+      - generic [ref=e94]:
+        - generic [ref=e102] [cursor=pointer]:
+          - img [ref=e103]
+          - generic [ref=e108]: App.jsx
+        - separator [ref=e109]
+        - code [ref=e114]:
+          - generic [ref=e115]:
+            - generic [ref=e117]:
+              - generic [ref=e120]: "1"
+              - generic [ref=e122]: "2"
+              - generic [ref=e124]: "3"
+              - generic [ref=e125]:
+                - generic [ref=e126] [cursor=pointer]: 
+                - generic [ref=e127]: "4"
+              - generic [ref=e129]: "5"
+              - generic [ref=e131]: "6"
+              - generic [ref=e133]: "7"
+              - generic [ref=e134]:
+                - generic [ref=e135] [cursor=pointer]: 
+                - generic [ref=e136]: "8"
+              - generic [ref=e137]:
+                - generic [ref=e138] [cursor=pointer]: 
+                - generic [ref=e139]: "9"
+              - generic [ref=e141]: "10"
+              - generic [ref=e144]: "11"
+              - generic [ref=e146]: "12"
+              - generic [ref=e148]: "13"
+              - generic [ref=e150]: "14"
+              - generic [ref=e151]:
+                - generic [ref=e152] [cursor=pointer]: 
+                - generic [ref=e153]: "15"
+              - generic [ref=e154]:
+                - generic [ref=e155] [cursor=pointer]: 
+                - generic [ref=e156]: "16"
+              - generic [ref=e158]: "17"
+              - generic [ref=e161]: "18"
+              - generic [ref=e163]: "19"
+              - generic [ref=e165]: "20"
+              - generic [ref=e166]:
+                - generic [ref=e167] [cursor=pointer]: 
+                - generic [ref=e168]: "21"
+              - generic [ref=e170]: "22"
+              - generic [ref=e172]: "23"
+              - generic [ref=e174]: "24"
+              - generic [ref=e175]:
+                - generic [ref=e176] [cursor=pointer]: 
+                - generic [ref=e177]: "25"
+              - generic [ref=e178]:
+                - generic [ref=e179] [cursor=pointer]: 
+                - generic [ref=e180]: "26"
+              - generic [ref=e182]: "27"
+              - generic [ref=e184]: "28"
+              - generic [ref=e186]: "29"
+              - generic [ref=e188]: "30"
+            - generic [ref=e270]:
+              - generic [ref=e272]: "import { useState } from 'react';"
+              - generic [ref=e274]: "import { Trash2, Plus, Check } from 'lucide-react';"
+              - generic [ref=e277]: "export default function TodoApp() {"
+              - generic [ref=e279]: const [todos, setTodos] = useState([]);
+              - generic [ref=e281]: const [input, setInput] = useState('');
+              - generic [ref=e284]: "const addTodo = () => {"
+              - generic [ref=e286]: "if (input.trim()) {"
+              - generic [ref=e288]: "setTodos([...todos, { id: Date.now(), text:"
+              - generic [ref=e290]: "input, completed: false }]);"
+              - generic [ref=e292]: setInput('');
+              - generic [ref=e294]: "}"
+              - generic [ref=e296]: "};"
+              - generic [ref=e299]: "const toggleComplete = (id) => {"
+              - generic [ref=e301]: setTodos(todos.map(todo =>
+              - generic [ref=e303]: "todo.id === id ? { ...todo, completed: !todo."
+              - generic [ref=e305]: "completed } : todo"
+              - generic [ref=e307]: ));
+              - generic [ref=e309]: "};"
+              - generic [ref=e312]: "const deleteTodo = (id) => {"
+              - generic [ref=e314]: setTodos(todos.filter(todo => todo.id !== id));
+              - generic [ref=e316]: "};"
+              - generic [ref=e319]: "const handleKeyPress = (e) => {"
+              - generic [ref=e321]: "if (e.key === 'Enter') {"
+              - generic [ref=e323]: addTodo();
+              - generic [ref=e325]: "}"
+              - generic [ref=e327]: "};"
+            - textbox "Editor content" [ref=e330]
+  - alert [ref=e47]
+  - generic [ref=e331]:
+    - alert
+    - alert
